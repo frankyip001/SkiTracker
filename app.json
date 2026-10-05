@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1D33",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.frankyip.skitracker",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.frankyip.skitracker",
+      "infoPlist": {
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Ski Tracker keeps recording your ski day when the app is in the background or your phone is locked.",
+        "NSLocationWhenInUseUsageDescription": "Ski Tracker records your GPS track while you ski, so it can measure your runs, speed and vertical.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "supportsTablet": true
+    },
+    "name": "Ski Tracker",
+    "orientation": "portrait",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true,
+          "isIosBackgroundLocationEnabled": true,
+          "locationAlwaysAndWhenInUsePermission": "Ski Tracker keeps recording your ski day when the app is in the background or your phone is locked.",
+          "locationWhenInUsePermission": "Ski Tracker records your GPS track while you ski, so it can measure your runs, speed and vertical."
+        }
+      ],
+      "expo-sqlite",
+      "expo-sharing"
+    ],
+    "scheme": "skitracker",
+    "slug": "ski-tracker",
+    "userInterfaceStyle": "light",
+    "version": "1.0.0",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6ff7daca-43f7-409f-9be8-42914b435396"
+      }
+    }
+  }
+}

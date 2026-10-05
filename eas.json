@@ -1,0 +1,1 @@
+{"build":{"development":{"developmentClient":true,"distribution":"internal","ios":{"simulator":false}},"preview":{"distribution":"internal"},"production":{}},"cli":{"appVersionSource":"remote","version":">= 16.0.0"},"submit":{"production":{}}}
