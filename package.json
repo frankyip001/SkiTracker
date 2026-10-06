@@ -34,5 +34,8 @@
     "web": "expo start --web",
     "lint": "expo lint"
   },
-  "private": true
+  "private": true,
+  "overrides": {
+    "react-dom": "19.2.0"
+  }
 }
